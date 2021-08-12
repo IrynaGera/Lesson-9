@@ -20,10 +20,15 @@ html {
 .flex-row {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flex-col {
+    width: calc(100% / 3);
+    padding: 0 15px;
 }
 
 .column {
-   width: 30%;
    background-color: white;
    text-align: center; 
    padding: 40px 0;
@@ -72,5 +77,6 @@ span {
 }
 
 .column:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+  transition: all ease-in-out 0.3s;
 }
